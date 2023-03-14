@@ -1,21 +1,43 @@
 # Curriculum Vitae
 
 ## Boris Zashliapin
-### Frontend-developer
+Frontend Developer
+
+![Фотография автора CV](./images/photo.png)
 
 ## Contacts
 **Location:** St Petersburg, Russia
 
 **Email:** test-zashliapin-b@yandex.ru
 
-**Telegram:** @elrouss
+**Telegram:** [@elrouss](https://t.me/elrouss)
 
 **Github:** https://github.com/elrouss
 
-## About
-Add text
+**LinkedIn:** https://www.linkedin.com/in/frontend-elrouss/
 
-## Hard Skills
+## About Me
+Having studying art history for 10 years I have become a professional in this sphere, who can attribute pieces of art of different epoques. I am a curator of an exhibition "Alexander Nevsky" (2021) and the author of 8 scientific articles.
+
+One year ago my school interest in programming has become passionate and having tried different areas (backend, testing) I have finally decided to become a frontend developer. Due to my trained eye it is easier to me working with the computer screen, but it does not detract at all from working with `console.log()` and writing a programm with `TypeScript` or `JavaScript`.
+
+I am interested in Web Development because this sphere developes dynamicallyy and provides an endless possibility for professional growth (which has stopped in the museum),
+besides there is a huge amount of free high quality resources for self-education and a large community of professional developers. 
+
+I believe, that my ability to quick learning and to gaining new skills will help me in becoming a proficient frontend developer.
+
+## Employment History
+**Researcher, State Hermitage Museum**
+
+*Mar 2018 - Present*
+
+Hermitage Museum is one of the world's greatest museum of art with collections unrivalled in their scope and diversity. As a researcher and a curator of silver in the Russian Department, my core activities include:
+
+* Art expertise and attribution
+* Writing scientific research articles
+* Conceiving and organizing exhibitions
+
+## Skills
 ### Frontend: 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -58,16 +80,19 @@ function permuteAPalindrome(input) {
 *([Codewars](https://www.codewars.com/kata/reviews/58aead37c51d22295a000053/groups/63f00c43b6f14400017e3853), 6kyu)*
 
 ## Experience
-Add text
+There are 
 
 ## Education
-### Courses (Frontend-developer)
-#### RS School (Mar, 2023 - present)
-#### Yandex Praktikum (Jul, 2022 - present)
+### Courses
+- [RS School](https://rs.school/) (Mar, 2023 - present)
+  - JavaScript/Front-end (Stage no. 1)
+- [Yandex Praktikum](https://practicum.yandex.ru/) (Jul, 2022 - present)
+  - Web Developer
 
 ### University
-#### St Peterburg State University (MA, history of arts, 2016-2018)
-#### St Peterburg State University (BA, history of arts, 2012-2016)
+- [St Peterburg State University](https://english.spbu.ru/)
+  - History of Arts, 2016-2018 (MA)
+  - History of Arts, 2012-2016 (BA)
 
 ## Languages
 * Russian (native)
