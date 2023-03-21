@@ -10,35 +10,42 @@
   <meta name="author" content="Борис Зашляпин">
   <meta name="keywords" content="HTML5, CSS3, RS School, Curriculum Vitae">
 
+  <link rel="stylesheet" href="./style.css">
+
   <title>Curriculum Vitae</title>
 </head>
 
-<body>
+<body class="page">
+
   <section class="intro">
     <h1>Curriculum Vitae</h1>
     <h2>Boris Zashliapin</h2>
     <p>Frontend Developer</p>
-    <img src="./images/photo.png" alt="Avatar of Boris Zashliapin">
+    <img class="intro__avatar" src="./images/photo.png" alt="Avatar of Boris Zashliapin">
   </section>
 
   <section class="contacts">
     <h2>Contacts</h2>
     <ul>
       <li>
-        <span>Location:</span> St Petersburg, Russia
+        <span class="text__accent_bold">Location:</span> St Petersburg, Russia
       </li>
       <li>
-        <span>Email:</span> test-zashliapin-b@yandex.ru
+        <span class="text__accent_bold">Email:</span>
+        <a class="link" href="mailto:test-zashliapin-b@yandex.ru?">test-zashliapin-b@yandex.ru</a>
       </li>
       <li>
-        <span>Telegram:</span> <a href="https://t.me/elrouss">@elrouss</a>
+        <span class="text__accent_bold">Telegram:</span> <a class="link" href="https://t.me/elrouss"
+          target="_blank">@elrouss</a>
       </li>
       <li>
-        <span>Github:</span> <a href="https://github.com/elrouss">https://github.com/elrouss</a>
+        <span class="text__accent_bold">Github:</span> <a class="link" href="https://github.com/elrouss"
+          target="_blank">https://github.com/elrouss</a>
       </li>
       <li>
-        <span>LinkedIn:</span> <a
-          href="https://www.linkedin.com/in/frontend-elrouss/">https://www.linkedin.com/in/frontend-elrouss/</a>
+        <span class="text__accent_bold">LinkedIn:</span>
+        <a class="link" href="https://www.linkedin.com/in/frontend-elrouss/"
+          target="_blank">https://www.linkedin.com/in/frontend-elrouss/</a>
       </li>
     </ul>
   </section>
@@ -52,8 +59,10 @@
     <p>
       One year ago my school interest in programming has become passionate and having tried different areas (backend,
       testing) I have finally decided to become a frontend developer. Due to my trained art eye it is easier to me
-      working with the computer screen, but it does not detract at all from working with `console.log()` and writing
-      programms with `TypeScript` or `JavaScript`. I do not exclude my development in the backend with the possibility
+      working with the computer screen, but it does not detract at all from working with <code
+        class="text__accent_code">console.log()</code> and writing
+      programms with <span class="text__accent_code">TypeScript</span> or <span
+        class="text__accent_code">JavaScript</span>. I do not exclude my development in the backend with the possibility
       of becoming a full-stack developer in the near future.
     </p>
     <p>
@@ -70,7 +79,7 @@
 
   <section class="skills">
     <h2>Skills</h2>
-    <h3>Frontend</h3>
+    <h3 class="skills__heading">Frontend</h3>
     <div>
       <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
         alt="Badge &laquo;React&raquo;">
@@ -78,6 +87,7 @@
         alt="Badge &laquo;TypeScript&raquo;">
       <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
         alt="Badge &laquo;JavaScript&raquo;">
+        <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Badge &laquo;Jest&raquo;">
       <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
         alt="Badge &laquo;SASS&raquo;">
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
@@ -86,7 +96,7 @@
         alt="Badge &laquo;HTML5&raquo;">
     </div>
     <div>
-      <h3>Backend</h3>
+      <h3 class="skills__heading">Backend</h3>
       <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
         alt="Badge &laquo;Express&raquo;">
       <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
@@ -97,7 +107,7 @@
         alt="Badge &laquo;Nginx&raquo;">
     </div>
     <div>
-      <h3>General</h3>
+      <h3 class="skills__heading">General</h3>
       <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
         alt="Badge &laquo;Git&raquo;">
       <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white"
@@ -115,59 +125,66 @@
 
   <section class="code-example">
     <h2>Code example</h2>
-    <h3>
-      Permute a Palindrome: Write a function that will check whether ANY permutation of the characters of the input
-      string is a palindrome
-    </h3>
+    <p>
+      <span class="text__accent_bold">Permute a Palindrome:</span>
+      <span class="text__accent_italic">
+        Write a function that will check whether ANY permutation of the characters of the input
+        string is a palindrome
+      </span>
+    </p>
 
-    <pre>
-      <code>
-        function permuteAPalindrome(input) {
-          const obj = {};
+    <pre><code>
+  function permuteAPalindrome(input) {
+    const obj = {};
 
-          for (let char in input) {
-            obj[input[char]] ? obj[input[char]] += 1 : obj[input[char]] = 1;
-          }
+    for (let char in input) {
+      obj[input[char]] ? obj[input[char]] += 1 : obj[input[char]] = 1;
+    }
 
-          let counter = 0;
-          Object.values(obj).forEach(num => {
-            if (num % 2 !== 0) counter++;
-          })
+    let counter = 0;
+    Object.values(obj).forEach(num => {
+      if (num % 2 !== 0) counter++;
+    })
 
-          return counter &lt;= 1; }
-      </code>
-    </pre>
-    (<a
-      href="https://www.codewars.com/kata/reviews/58aead37c51d22295a000053/groups/63f00c43b6f14400017e3853">Codewars</a>,
-    6kyu)
+    return counter &lt;= 1;
+  }
+      </code></pre>
+    <span class="text__accent_italic">
+      <a class="link"
+        href="https://www.codewars.com/kata/reviews/58aead37c51d22295a000053/groups/63f00c43b6f14400017e3853"
+        target="_blank">(Codewars, 6kyu)
+      </a>
+    </span>
   </section>
 
   <section class="experience">
     <h2>Experience</h2>
     <div>
-      <h3>Yandex Praktikum</h3>
-      <h4>Senior Student in Web Development Course (part-time)</h4>
+      <h3 class="experience__heading-school">Yandex Praktikum</h3>
+      <h4 class="experience__heading-job">Senior Student in Web Development Course (part-time)</h4>
       <p>Mar, 2023 - Present</p>
       <p>The scope of my tasks includes helping students master the educational material, code review and debugging of
-        their work
+        their works
       </p>
 
-      <h4>Frontend Developer (student)</h4>
+      <h4 class="experience__heading-job">Frontend Developer (student)</h4>
       <p>Jul, 2022 - Present</p>
       <h5>Projects:</h5>
       <ol>
         <li>
           <h6>Mesto</h6>
           <p>Single page application (SPA) similar to popular social networks: Facebook, Instagram, VKontakte</p>
-          <a href="">
-            <img src="./images/mesto.png" alt="Main page of a project">
+          <a href="" target="_blank">
+            <img class="experience__project-img" src="./images/mesto.png" alt="Main page of a project">
           </a>
           <ul>
-            <li>Technologies: React, JavaScript, CSS3, HTML5, Expess, NodeJS, MongoDB</li>
-            <li>Functionality: registration and authorization of users, validation of forms, editing profile data,
+            <li><span class="text__accent_bold">Technologies:</span> React, JavaScript, CSS3, HTML5, Expess, NodeJS,
+              MongoDB</li>
+            <li><span class="text__accent_bold">Functionality:</span> registration and authorization of users,
+              validation of forms, editing profile data,
               adding and
               deleting cards, likes, modal windows</li>
-            <li>Link: *will be later*</li>
+            <li><span class="text__accent_bold">Link:</span> <span class="text__accent_italic">will be later</span></li>
           </ul>
         </li>
 
@@ -178,16 +195,17 @@
             2nd place in the overall standings. The project was completed on our own initiative after learning
             JavaScript
           </p>
-          <a href="https://github.com/elrouss/competitive-project-team-1" target="_blank">
-            <img src="./images/cycling.png" alt="Main page of a project">
+          <a class="link" href="https://github.com/elrouss/competitive-project-team-1" target="_blank">
+            <img class="experience__project-img" src="./images/cycling.png" alt="Main page of a project">
           </a>
           <ul>
-            <li>Technologies: JavaScript, SplideJS, CSS3, HTML5</li>
-            <li>Functionality: modal windows, sliders with text switching, tabs with switching card galleries,
+            <li><span class="text__accent_bold">Technologies:</span> JavaScript, SplideJS, CSS3, HTML5</li>
+            <li><span class="text__accent_bold">Functionality:</span> modal windows, sliders with text switching, tabs
+              with switching card galleries,
               light/dark theme
               switcher</li>
-            <li>Link: <a href="https://github.com/elrouss/competitive-project-team-1"
-                target="_blank">
+            <li><span class="text__accent_bold">Link:</span> <a class="link"
+                href="https://github.com/elrouss/competitive-project-team-1" target="_blank">
                 https://github.com/elrouss/competitive-project-team-1
               </a>
             </li>
@@ -198,16 +216,18 @@
           <h6>Yandex Landing</h6>
           <p>Landing page about work in Yandex Practicum with vacancies for mentors and reviewers, made by a team of 3
             designers and 3 web developers as part of a student competition</p>
-            <a href="https://github.com/elrouss/yandex_landing" target="_blank">
-              <img src="./images/yandex-landing.png" alt="Main paje of a project">
-            </a>
-            <ul>
-              <li>Technologies: JavaScript, CSS3, HTML5</li>
-              <li>Functionality: modal windows, sliders (pure CSS3), form, test</li>
-              <li>
-                <a href="https://github.com/elrouss/yandex_landing" target="_blank">https://github.com/elrouss/yandex_landing</a>
-              </li>
-            </ul>
+          <a class="link" href="https://github.com/elrouss/yandex_landing" target="_blank">
+            <img class="experience__project-img" src="./images/yandex-landing.png" alt="Main paje of a project">
+          </a>
+          <ul>
+            <li><span class="text__accent_bold">Technologies:</span> JavaScript, CSS3, HTML5</li>
+            <li><span class="text__accent_bold">Functionality:</span> modal windows, sliders (pure CSS3), form, test
+            </li>
+            <li><span class="text__accent_bold">Link:</span>
+              <a class="link" href="https://github.com/elrouss/yandex_landing"
+                target="_blank">https://github.com/elrouss/yandex_landing</a>
+            </li>
+          </ul>
         </li>
       </ol>
     </div>
@@ -218,7 +238,7 @@
     <h3>Courses</h3>
     <ul>
       <li>
-        <a href="https://rs.school/" target="_blank">
+        <a class="link" href="https://rs.school/" target="_blank">
           <h4>The Rolling Scopes School</h4>
         </a>
         (Mar, 2023 - Present)
@@ -227,7 +247,7 @@
         </ul>
       </li>
       <li>
-        <a href="https://practicum.yandex.ru/" target="_blank">
+        <a class="link" href="https://practicum.yandex.ru/" target="_blank">
           <h4>Yandex Praktikum</h4>
         </a>
         (Jul, 2022 - Present)
