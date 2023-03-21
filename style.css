@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  padding: 5px 0 0 15px;
+}
+
+section {
+  padding: 15px 0;
+}
+
+section:not(:last-of-type) {
+  border-bottom: 1px solid #000000;
+}
+
+.education > ul {
+  padding-left: 15px;
+
+  list-style-type: initial;
+}
+
+.education > ul > li > a > h4 {
+  margin-top: 3px;
+}
+
+.languages > ul {
+  padding-left: 15px;
+
+  list-style-type: initial;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+}
+
+pre {
+  margin: 8px 0;
+
+  background-color: #f6f8fa;
+}
+
+.page {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.link {
+  color: inherit;
+  text-decoration-skip-ink: none;
+}
+
+.intro__avatar {
+  max-width: 320px;
+}
+
+.skills__heading {
+  margin-bottom: 2px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience > div > ol > li > a {
+  display: flex;
+  justify-content: center;
+}
+
+.experience__heading-school {
+  margin-top: 2px;
+}
+
+.experience__heading-job {
+  margin-top: 5px;
+}
+
+.experience__project-img {
+  max-width: 500px;
+  margin: 5px 0;
+
+  border: .5px solid #000;
+}
+
+.text__accent_bold {
+  font-weight: 600;
+}
+
+.text__accent_italic {
+  font-style: italic;
+}
+
+.text__accent_code {
+  background-color: #e4e6e8;
+  border-radius: 4px;;
+}
