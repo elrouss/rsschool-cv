@@ -3,7 +3,7 @@
 ## Boris Zashliapin
 Frontend Developer
 
-![Фотография автора CV](./images/photo.png)
+![Фотография автора CV](./assets/images/photo.png)
 
 ## Contacts
 **Location:** St Petersburg, Russia
@@ -22,12 +22,12 @@ Having studying art history for 10 years and working in the State Hermitage Muse
 One year ago my school interest in programming has become passionate and having tried different areas (backend, testing) I have finally decided to become a frontend developer. Due to my trained art eye it is easier to me working with the computer screen, but it does not detract at all from working with `console.log()` and writing programms with `TypeScript` or `JavaScript`. I do not exclude my development in the backend with the possibility of becoming a full-stack developer in the near future.
 
 I am interested in web because this sphere developes dynamically and provides an endless possibility for professional growth (which has stopped in the museum),
-besides there is a huge amount of free high quality resources for self-education and a large community of professional developers. 
+besides there is a huge amount of free high quality resources for self-education and a large community of professional developers.
 
 I believe, that my ability to quick learning and to gaining new skills will help me in becoming a proficient web developer.
 
 ## Skills
-### Frontend: 
+### Frontend:
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -51,18 +51,18 @@ I believe, that my ability to quick learning and to gaining new skills will help
 **Permute a Palindrome:** *Write a function that will check whether ANY permutation of the characters of the input string is a palindrome*
 
 ````
-function permuteAPalindrome(input) { 
+function permuteAPalindrome(input) {
   const obj = {};
-  
+
   for (let char in input) {
     obj[input[char]] ? obj[input[char]] += 1 : obj[input[char]] = 1;
   }
-  
+
   let counter = 0;
   Object.values(obj).forEach(num => {
     if (num % 2 !== 0) counter++;
   })
-  
+
   return counter <= 1;
 }
 ````
@@ -86,7 +86,7 @@ Projects:
 
 Single page application (SPA) similar to popular social networks: Facebook, Instagram, VKontakte
 
-[![Main page of a project](./images/mesto.png)]()
+[![Main page of a project](./assets/images/mesto.png)]()
 
   - Technologies: React, JavaScript, CSS3, HTML5, Expess, NodeJS, MongoDB
   - Functionality: registration and authorization of users, validation of forms, editing profile data, adding and deleting cards, likes, modal windows
@@ -96,7 +96,7 @@ Single page application (SPA) similar to popular social networks: Facebook, Inst
 
 One-page adaptive landing, made by a team. The layout was implemented as part of a 3-day student competition, took 2nd place in the overall standings. The project was completed on our own initiative after learning JavaScript
 
-[![Main page of a project](./images/cycling.png)](https://github.com/elrouss/competitive-project-team-1)
+[![Main page of a project](./assets/images/cycling.png)](https://github.com/elrouss/competitive-project-team-1)
 
 - Technologies: JavaScript, SplideJS, CSS3, HTML5
 - Functionality: modal windows, sliders with text switching, tabs with switching card galleries, light/dark theme switcher
@@ -106,7 +106,7 @@ One-page adaptive landing, made by a team. The layout was implemented as part of
 
 Landing page about work in Yandex Practicum with vacancies for mentors and reviewers, made by a team of 3 designers and 3 web developers as part of a student competition
 
-[![Main paje of a project](./images/yandex-landing.png)](https://github.com/elrouss/yandex_landing)
+[![Main paje of a project](./assets/images/yandex-landing.png)](https://github.com/elrouss/yandex_landing)
 
 - Technologies: JavaScript, CSS3, HTML5
 - Functionality: modal windows, sliders (pure CSS3), form, test
@@ -124,7 +124,7 @@ Projects:
 
 Landing page with different memes
 
-[![Main page of a project](./images/cssBayan.png)](https://github.com/elrouss/cssBayan/tree/main)
+[![Main page of a project](./assets/images/cssBayan.png)](https://github.com/elrouss/cssBayan/tree/main)
 
   - Technologies: CSS3, HTML5
   - Functionality: responsive interface, expand list on hover, interaction effect on click/tap, saving the state of the expanded list after a click/tap
