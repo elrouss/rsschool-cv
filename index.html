@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="distribution" content="global">
+  <meta name="description" content="Studiyng task RS School (Curriculum Vitae)">
+  <meta name="author" content="Борис Зашляпин">
+  <meta name="keywords" content="HTML5, CSS3, RS School, Curriculum Vitae">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Curriculum Vitae</title>
+</head>
+
+<body class="page">
+  <header class="intro">
+    <nav>
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+
+    <h1>Curriculum Vitae</h1>
+    <h2>Boris Zashliapin</h2>
+    <p>Frontend Developer</p>
+    <img class="intro__avatar" src="./assets/images/photo.png" alt="Avatar of Boris Zashliapin">
+  </header>
+
+  <main>
+    <section class="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li>
+          <span class="text__accent_bold">Location:</span> St Petersburg,
+          Russia
+        </li>
+        <li>
+          <span class="text__accent_bold">Email:</span>
+          <a href="mailto:test-zashliapin-b@yandex.ru?">test-zashliapin-b@yandex.ru</a>
+        </li>
+        <li>
+          <span class="text__accent_bold">Telegram:</span>
+          <a href="https://t.me/elrouss" target="_blank" rel="noopener noreferrer">@elrouss</a>
+        </li>
+        <li>
+          <span class="text__accent_bold">Github:</span>
+          <a href="https://github.com/elrouss" target="_blank" rel="noopener noreferrer">https://github.com/elrouss</a>
+        </li>
+        <li>
+          <span class="text__accent_bold">LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/frontend-elrouss/" target="_blank"
+            rel="noopener noreferrer">https://www.linkedin.com/in/frontend-elrouss/</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="description">
+      <h2>About Me</h2>
+      <p>
+        Having studying art history for 10 years and working in the State
+        Hermitage Museum as a researcher and a curator of silver I have become
+        a professional in this sphere, who can attribute pieces of art of
+        different epoques.
+      </p>
+      <p>
+        One year ago my school interest in programming has become passionate
+        and having tried different areas (backend, testing) I have finally
+        decided to become a frontend developer. Due to my trained art eye it
+        is easier to me working with the computer screen, but it does not
+        detract at all from working with
+        <code class="text__accent_code">console.log()</code> and writing
+        programms with <span class="text__accent_code">TypeScript</span> or
+        <span class="text__accent_code">JavaScript</span>. I do not exclude my
+        development in the backend with the possibility of becoming a
+        full-stack developer in the near future.
+      </p>
+      <p>
+        I am interested in web because this sphere developes dynamically and
+        provides an endless possibility for professional growth (which has
+        stopped in the museum), besides there is a huge amount of free high
+        quality resources for self-education and a large community of
+        professional developers.
+      </p>
+      <p>
+        I believe, that my ability to quick learning and to gaining new skills
+        will help me in becoming a proficient web developer.
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul class="skills__list">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>SCSS (Sass)</li>
+        <li>Nunjucks</li>
+        <li>CSS3</li>
+        <li>HTML5</li>
+        <li>Webpack</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="code" class="code-example">
+      <h2>Code example</h2>
+      <p>
+        <span class="text__accent_bold">Permute a Palindrome:</span>
+        <span class="text__accent_italic">
+          Write a function that will check whether ANY permutation of the
+          characters of the input string is a palindrome
+        </span>
+      </p>
+
+      <pre><code>
+  function permuteAPalindrome(input) {
+    const obj = {};
+
+    for (let char in input) {
+      obj[input[char]] ? obj[input[char]] += 1 : obj[input[char]] = 1;
+    }
+
+    let counter = 0;
+    Object.values(obj).forEach(num =&gt; {
+      if (num % 2 !== 0) counter++;
+    })
+
+    return counter &lt;= 1;
+  }
+      </code></pre>
+      <span class="text__accent_italic">
+        <a href="https://www.codewars.com/kata/reviews/58aead37c51d22295a000053/groups/63f00c43b6f14400017e3853"
+          target="_blank" rel="noopener noreferrer">(Codewars, 6kyu)
+        </a>
+      </span>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2>Experience</h2>
+      <div>
+        <h3 class="experience__heading-school">Yandex Praktikum</h3>
+        <h4 class="experience__heading-job">
+          Senior Student in Web Development Course (part-time)
+        </h4>
+        <p>2023 - 2024</p>
+        <p>
+          The scope of my tasks includes helping students master the
+          educational material, code review and debugging of their works
+        </p>
+
+        <h4 class="experience__heading-job">Frontend Developer (student)</h4>
+        <p>2022 - 2023</p>
+        <h5>Projects:</h5>
+        <ol>
+          <li>
+            <h6>Mesto</h6>
+            <p>
+              Single page application (SPA) similar to popular social
+              networks: Facebook, Instagram, VKontakte
+            </p>
+            <a href="https://github.com/elrouss/react-mesto-auth" target="_blank" rel="noopener noreferrer">
+              <img class="experience__project-img" src="./assets/images/mesto.png" alt="Main page of a project">
+            </a>
+            <ul>
+              <li>
+                <span class="text__accent_bold">Technologies:</span> React,
+                JavaScript, CSS3, HTML5, Expess, NodeJS, MongoDB
+              </li>
+              <li>
+                <span class="text__accent_bold">Functionality:</span>
+                registration and authorization of users, validation of forms,
+                editing profile data, adding and deleting cards, likes, modal
+                windows
+              </li>
+              <li>
+                <span class="text__accent_bold">Link:</span>
+                <a href="https://github.com/elrouss/react-mesto-auth" target="_blank" rel="noopener noreferrer">
+                  https://github.com/elrouss/react-mesto-auth
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h6>Cycling</h6>
+            <p>
+              One-page adaptive landing, made by a team. The layout was
+              implemented as part of a 3-day student competition, took 2nd
+              place in the overall standings. The project was completed on our
+              own initiative after learning JavaScript
+            </p>
+            <a href="https://github.com/elrouss/competitive-project-team-1" target="_blank" rel="noopener noreferrer">
+              <img class="experience__project-img" src="./assets/images/cycling.png" alt="Main page of a project">
+            </a>
+            <ul>
+              <li>
+                <span class="text__accent_bold">Technologies:</span>
+                JavaScript, SplideJS, CSS3, HTML5
+              </li>
+              <li>
+                <span class="text__accent_bold">Functionality:</span> modal
+                windows, sliders with text switching, tabs with switching card
+                galleries, light/dark theme switcher
+              </li>
+              <li>
+                <span class="text__accent_bold">Link:</span>
+                <a href="https://github.com/elrouss/competitive-project-team-1" target="_blank"
+                  rel="noopener noreferrer">
+                  https://github.com/elrouss/competitive-project-team-1
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h6>Yandex Landing</h6>
+            <p>
+              Landing page about work in Yandex Practicum with vacancies for
+              mentors and reviewers, made by a team of 3 designers and 3 web
+              developers as part of a student competition
+            </p>
+            <a href="https://github.com/elrouss/yandex_landing" target="_blank" rel="noopener noreferrer">
+              <img class="experience__project-img" src="./assets/images/yandex-landing.png"
+                alt="Main paje of a project">
+            </a>
+            <ul>
+              <li>
+                <span class="text__accent_bold">Technologies:</span>
+                JavaScript, CSS3, HTML5
+              </li>
+              <li>
+                <span class="text__accent_bold">Functionality:</span> modal
+                windows, sliders (pure CSS3), form, test
+              </li>
+              <li>
+                <span class="text__accent_bold">Link:</span>
+                <a href="https://github.com/elrouss/yandex_landing" target="_blank"
+                  rel="noopener noreferrer">https://github.com/elrouss/yandex_landing</a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <h3>Courses</h3>
+      <ul>
+        <li>
+          <a href="https://practicum.yandex.ru/" target="_blank" rel="noopener noreferrer">
+            <h4>Yandex Praktikum</h4>
+          </a>
+          (2022&ndash;2023)
+        </li>
+      </ul>
+    </section>
+
+    <section id="languages" class="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>Russian (native)</li>
+        <li>English (B2)</li>
+        <li>German (B1)</li>
+        <li>French (A1)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2025</small>
+
+    <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">
+      <img class="logo" src="./assets/icons/rs-school-logo.svg" alt="Logo of ROlling Scopes School"></a>
+
+    <a href="https://github.com/elrouss" target="_blank" rel="noopener noreferrer">@elrouss</a>
+  </footer>
+</body>
+
+</html>
